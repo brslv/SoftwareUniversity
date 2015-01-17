@@ -1,0 +1,7 @@
+To compile .java file:
+
+javac SumTwoNumbers.java
+
+To run the compiled .java file (.class file):
+
+java SumTwoNumbers
