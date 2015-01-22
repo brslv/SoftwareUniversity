@@ -1,4 +1,4 @@
-package brslv.pack;
+package pack;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
