@@ -1,0 +1,7 @@
+Coffee 1.20
+Cocoa 1.50
+Moca 1.80
+Latte 3.20
+Watter 1.20
+Coca-Cola 1.80
+Sprite 1.80 
