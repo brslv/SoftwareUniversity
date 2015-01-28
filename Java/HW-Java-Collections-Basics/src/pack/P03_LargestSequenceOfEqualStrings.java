@@ -11,31 +11,38 @@ public class P03_LargestSequenceOfEqualStrings {
 		
 		String[] input = in.nextLine().split(" ");
 		
-		int finalIndex = 0;
-		int counter = 1;
+		int counter = 0;
 		int maxLen = 0;
+		int finalIndex = 0;
 		
-		for (int index = 0; index < input.length - 1; index++) {
-			String currentElem = input[index];
-			String nextElem = input[index + 1];
+		if(input.length == 1) System.out.println(input[0]);
+		
+		for (int i = 0; i < input.length - 1; i++) {
+			String currentElem = input[i];
+			String nextElem = input[i + 1];
 			
 			if(currentElem.equals(nextElem)){
 				counter++;
 			}else{
-				if(counter > maxLen){
-					maxLen = counter;
-					finalIndex = index;
-					counter = 1;
-				}else{
-					counter = 1;
-				}
-			}	
+				counter = 0;
+			}
+			
+			if(counter > maxLen){
+				maxLen = counter;
+				finalIndex = i + 1;
+			}
+			
 		}
 		
-		for (int i = finalIndex - maxLen + 1; i <= finalIndex; i++) {
-			System.out.println(input[i]);
+		if(maxLen == 0){
+			if(input.length > 1) System.out.println(input[0]);
+		}else{	
+			for (int i = finalIndex - maxLen; i <= finalIndex; i++) {
+				System.out.println(input[i]);
+			}
 		}
 		
-	}
 
+	}
+	
 }
