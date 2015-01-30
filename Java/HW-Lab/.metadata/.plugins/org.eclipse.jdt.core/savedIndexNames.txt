@@ -1,0 +1,17 @@
+INDEX VERSION 1.127+/home/brslv/Development/GitHub/SoftwareUniversity/Java/Ignore-this/EclipseTrainings/HW-Lab/.metadata/.plugins/org.eclipse.jdt.core
+1141261530.index
+3444579373.index
+3505056527.index
+3323230142.index
+1670832901.index
+3162663208.index
+624858469.index
+2340474578.index
+308454381.index
+2959422273.index
+3308749605.index
+650805364.index
+2261285775.index
+3984282819.index
+845736288.index
+3731249705.index

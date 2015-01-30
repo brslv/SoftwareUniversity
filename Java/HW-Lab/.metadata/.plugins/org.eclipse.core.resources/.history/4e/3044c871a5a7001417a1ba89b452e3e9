@@ -1,0 +1,10 @@
+package pack;
+
+public class P06_BitCarousel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
