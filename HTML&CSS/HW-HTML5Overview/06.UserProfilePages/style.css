@@ -1,0 +1,31 @@
+body{
+	background: #add8e6;
+}
+
+.profile-content > img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.personal-info{
+	margin: 0;
+	padding: 0;
+}
+
+.personal-info > li{
+	list-style: none;
+}
+
+.friends-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.friends-list li{
+	list-style: none;
+}
+
+.italic{
+	font-style: italic;
+}
