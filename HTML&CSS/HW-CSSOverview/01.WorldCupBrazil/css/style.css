@@ -1,0 +1,128 @@
+/*______Base styles______*/
+body{
+	background: #00923e;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#wrapper{
+	width: 1064px;
+	margin: 100px auto;
+}
+
+h1{
+	font-size: 1.5em;
+	padding: 0;
+	margin: 10px 0;
+}
+
+/*______Helper classes______*/
+.text-center{ text-align: center; }
+.text-right{ text-align: right; }
+.text-left{ text-align: left; }
+
+/*______Table______*/
+table{
+	border-spacing: 0;
+}
+
+#first-team,
+#second-team,
+#betting-first-team,
+#betting-second-team{
+	width: 15%;
+}
+
+#betting-result{
+	width: 10%;
+}
+
+#result,
+#group,
+#betting-btn{
+	width: 5%;
+}
+
+.bordered{
+	border: solid #000 2px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.bordered th, td{
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;	
+	padding: 8px;
+}
+
+.bordered th:first-child{ border-radius: 10px 0 0 0; }
+.bordered th:last-child{ border-radius: 0 10px 0 0; }
+.bordered th:last-child, td:last-child{ border-right: none; }
+.bordered th{ background: #f8c711; }
+.bordered .last-row td:first-child{ border-radius: 0 0 0 10px; }
+.bordered .last-row td:last-child{ border-radius: 0 0 10px 0; }
+.bordered .last-row td{ border-bottom: none; }
+
+#betting-result select{
+	width: 38px;
+	height: 32px;
+}
+
+.row:nth-child(odd){ background: #fff; }
+.row:nth-child(even){ background: #c8c8c8; }
+
+/*______Buttons______*/
+.btn{
+	padding: 12px 4px 3px 4px;
+	border-radius: 100%;
+	text-transform: uppercase;
+	height: 25px;
+	text-align: center;
+	border: 2px solid #dadada;
+}
+
+.btn a{
+	color: #fff;
+	text-decoration: none;
+}
+.red-btn{ background: red; }
+.green-btn{ background: green; }
+
+/*______Flags______*/
+.brazil-flag-l:before{ content: url(../img/flags/brazil.jpg); padding-right: 10px; }
+.brazil-flag-r:after{ content: url(../img/flags/brazil.jpg); padding-left: 10px; }
+
+.mexico-flag-l:before{ content: url(../img/flags/mexico.jpg); padding-right: 10px; }
+.mexico-flag-r:after{ content: url(../img/flags/mexico.jpg); padding-left: 10px; }
+
+.spain-flag-l:before{ content: url(../img/flags/spain.jpg); padding-right: 10px; }
+.spain-flag-r:after{ content: url(../img/flags/spain.jpg); padding-left: 10px; }
+
+.netherlands-flag-l:before{ content: url(../img/flags/netherlands.jpg); padding-right: 10px; }
+.netherlands-flag-r:after{ content: url(../img/flags/netherlands.jpg); padding-left: 10px;}
+
+.italy-flag-l:before{ content: url(../img/flags/italy.jpg); padding-right: 10px; }
+.italy-flag-r:after{ content: url(../img/flags/italy.jpg); padding-left: 10px; }
+
+.england-flag-l:before{ content: url(../img/flags/england.jpg); padding-right: 10px; }
+.england-flag-r:after{ content: url(../img/flags/england.jpg); padding-left: 10px; }
+
+.argentina-flag-l:before{ content: url(../img/flags/argentina.jpg); padding-right: 10px; }
+.argentina-flag-r:after{ content: url(../img/flags/argentina.jpg); padding-left: 10px; }
+
+.bosnia-flag-l:before{ content: url(../img/flags/bosnia.jpg); padding-right: 10px; }
+.bosnia-flag-r:after{ content: url(../img/flags/bosnia.jpg); padding-left: 10px; }
+
+.germany-flag-l:before{ content: url(../img/flags/germany.jpg); padding-right: 10px; }
+.germany-flag-r:after{ content: url(../img/flags/germany.jpg); padding-left: 10px; }
+
+.portugal-flag-l:before{ content: url(../img/flags/portugal.jpg); padding-right: 10px; }
+.portugal-flag-r:after{ content: url(../img/flags/portugal.jpg); padding-left: 10px; }
+
+
+/*______TODOS______*/
+/**
+* Add flags
+* Color the select options
+*/

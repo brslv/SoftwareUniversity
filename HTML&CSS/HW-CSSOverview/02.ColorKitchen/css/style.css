@@ -1,0 +1,144 @@
+@import 'normalize.css';
+
+/*______Base styles______*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: url('../img/colorful_dots_on_black.jpg');
+}
+
+
+/*______Header______*/
+body>header{
+	padding: 20px;
+	color: yellow;
+	text-align: center;
+	font-size: 2.3em;
+	font-weight: bold;
+	
+	/*Background*/
+	background: rgba(255,0,0,1);
+	background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(0,128,0,1) 35%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(35%, rgba(255,0,0,1)), color-stop(35%, rgba(0,128,0,1)), color-stop(66%, rgba(0,128,0,1)), color-stop(66%, rgba(0,0,255,1)), color-stop(100%, rgba(0,0,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(0,128,0,1) 35%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(0,128,0,1) 35%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(0,128,0,1) 35%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(0,128,0,1) 35%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#0000ff', GradientType=1 );
+}
+
+/*______Grid______*/
+aside{
+	width: 22%;
+	float: left;
+	display: block;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+section{
+	width: 66%;
+	float: right;
+	display: block;
+	margin-right: 4%; 
+}
+
+
+/*______Section______*/
+article, aside{
+	background: rgba(255, 255, 255, .85);
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+	aside, article:first-child{
+		margin-top: 30px;
+	}
+
+	article:last-child{
+		margin-bottom: 0;
+	}
+
+	article>div:first-letter{
+		font-size: 3em;
+	}
+
+	article>div:first-line{
+		font-style: italic;
+	}
+
+article a{
+	color: #6b6b6b;
+	font-style: italic;
+}
+
+article span[lang="la"]{
+	font-style: italic;
+	color: #0000ff;
+}
+
+	article span[lang="la"]:before{
+		content: "\" ";
+	}
+
+	article span[lang="la"]:after{
+		content: " \"";
+	}
+
+article>header{
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.7em;
+}
+	
+#webColors{ background: #ff0000; color: #fff;}
+#webSafeColors{ background: #ffa500; }
+#RGB{ background: #ffff00; }
+#RGBA{ background: #008000; color: #fff; }
+#HSLHSV{ background: #0000ff; color: #fff; }
+#lorem{ background: #800080; color: #fff; }
+
+/*______Sidebar______*/
+aside header{
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+aside ul{
+	padding: 0 0 0 10px;
+	margin: 10px 0 0 0;
+}
+
+aside ul li{
+	list-style: none;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+	aside ul li a{
+		color: #000;
+		text-decoration: none;
+	}
+
+	aside ul li a:visited{
+		color: gray;
+	}
+
+	aside ul li a:hover{
+		cursor: default;
+	}
+
+	aside ul li:hover:nth-child(1){ background: #ff0000; }
+	aside ul li:hover:nth-child(2){ background: #ffa500; }
+	aside ul li:hover:nth-child(3){ background: #ffff00; }
+	aside ul li:hover:nth-child(4){ background: #008000; }
+	aside ul li:hover:nth-child(5){ background: #0000ff; }
+	aside ul li:hover:nth-child(6){ background: #800080; }
+
+aside ul li:before{
+	content: url('../img/bullet.png');
+	padding-right: 10px; 
+}
