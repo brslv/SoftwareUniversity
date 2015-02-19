@@ -1,0 +1,44 @@
+
+
+iframe img{
+	width: 200px;
+	height: 200px;
+}
+
+.wrapper{
+	padding: 30px;
+	border-radius: 10px;
+	width: 350px;
+	height: 300px;
+	color: #fff;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.wrapper h1{
+	text-align: center;
+	color: yellow;
+}
+
+a{
+	color: #fff;
+	font-style: italic;
+}
+
+a:hover{
+	color: yellow;
+}
+
+.frm{
+	float: left;
+	margin-right: 20px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}

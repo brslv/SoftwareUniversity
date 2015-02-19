@@ -1,0 +1,99 @@
+/*****************************************************/
+/*=== Modules ===*/
+/*****************************************************/
+
+/*****************************************************/
+/*=== Middle section of the website ===*/
+/*****************************************************/
+.mid{
+	margin-top: 50px;
+}
+
+/*****************************************************/
+/*=== Blocks ===*/
+/*****************************************************/
+
+.block{
+	margin-top: 30px;
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	&:last-child{
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+/*****************************************************/
+/*=== Panels ===*/
+/*****************************************************/
+.panel{
+	padding-left: (100 - $wrapper-width) / 2;
+	padding-right: (100 - $wrapper-width) / 2;
+}
+
+.sm-panel{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.lg-panel{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.twitter-panel{
+	margin-top: 20px;
+	background: $mid-color + 45;
+}
+
+.dark-panel{
+	color: #fff;
+	background: #000;
+	
+	h1, h2, h3, h4, h5, h6{
+		margin-top: 0;
+		padding-top: 0;
+		font-weight: 600;
+	}
+
+	a{
+		color: #fff;
+
+		&:hover{
+			color: $accent-color;
+		}
+	}
+
+	p{
+		color: $mid-color;
+	}
+}
+
+/*****************************************************/
+/*=== Posts ===*/
+/*****************************************************/
+.post:last-child{
+	border-bottom: 1px solid $mid-color;
+}
+
+.post-content{ margin: 20px 0; }
+
+/*****************************************************/
+/*=== Headings ===*/
+/*****************************************************/
+.secondary-heading{
+	@extend .bare-heading;
+	color: $mid-color;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: $small;
+}
+
+.ternary-heading{
+	@extend .bare-heading;
+	font-weight: 300;
+	text-transform: uppercase;
+}

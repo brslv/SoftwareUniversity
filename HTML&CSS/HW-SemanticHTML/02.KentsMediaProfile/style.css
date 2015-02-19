@@ -1,0 +1,46 @@
+@import 'normalize.css';
+@import 'grid.css';
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+h2{
+	margin-top: 0;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+#wrapper{
+	width: 75%;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 100px auto;
+	background: #ffc0cb;
+}
+
+.title{
+	font-size: 1.7em;
+	text-align: center;
+}
+
+figure {margin: 0; padding: 0;}
+
+.user-avatar img{
+	max-width: 200px;
+	max-height: 200px;
+	/*margin-bottom: 20px;*/
+}
+
+meter{
+	width: 200px;
+	height: 20px;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}

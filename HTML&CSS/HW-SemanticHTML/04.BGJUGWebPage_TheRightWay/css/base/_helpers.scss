@@ -1,0 +1,47 @@
+/*****************************************************/
+/*=== Aligns ===*/
+/*****************************************************/
+.align-right{ text-align: right; }
+.align-left{ text-align: left; }
+.align-center{ text-align: center; }
+
+.left{ float: left; }
+.right{ float: right; }
+
+/*****************************************************/
+/*=== Typo helpers ===*/
+/*****************************************************/
+small, .small{ font-size: $small; }
+.smallest{ font-size: $smallest; }
+.upper{ text-transform: uppercase; }
+
+h1.bare-heading,
+h2.bare-heading,
+h3.bare-heading,
+h4.bare-heading,
+h5.bare-heading,
+h6.bare-heading,
+{
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+}
+
+/*****************************************************/
+/*=== Colors ===*/
+/*****************************************************/
+.text-mid{
+	color: $mid-color;
+}
+
+
+/*****************************************************/
+/*=== Some ===*/
+/*****************************************************/
+.full-width{
+	width: 100%;
+}
+
+.no-border{
+	border: 0;
+}
