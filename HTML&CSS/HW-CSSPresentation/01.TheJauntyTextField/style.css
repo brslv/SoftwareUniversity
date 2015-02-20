@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.box, .baloons{
+	width: 570px;
+	margin: 0 auto;
+}
+
+.box{
+	text-align: center;
+	border-top: 5px dotted yellow;
+	border-left: 5px dashed #ff0000;
+	border-right: 8px solid #1bb50d;
+	border-bottom: 8px double #0000ff;
+	box-shadow: 20px 20px 5px 5px rgba(0,0,0,.7);
+}
+
+.rounded-area{
+	border-radius: 100px;
+	border: 2px solid red;
+	box-shadow: 0 0 0 3px yellow,
+				0 0 0 6px green,
+				0 0 0 8px blue;
+	width: 85%;
+	margin: 30px auto;
+}
+
+.text-shadow{
+	text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.heading{
+	font-weight: 300;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.button-set{
+	margin-bottom: 15px;
+}
+
+.button-like{
+	background: orange;
+	padding: 3px;
+	box-shadow: inset -2px -2px 0px rgba(0,0,0,.2),
+				inset 2px 2px 0px rgba(255,255,255,.3);
+}
+
+/*______Baloons______*/
+.baloons{
+	margin-top: -205px;
+	padding-left: 420px;
+	position: relative;
+	z-index: 1;
+}
+
+.baloon{	
+	background: rgba(150,150,150,.7);
+	border: 3px dashed #fff;
+	box-shadow: 0 0 0 3px rgba(150,150,150,.7);
+	border-radius: 100%;
+}
+
+.small-b{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+}
+
+.mid-b{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+
+.large-b{
+	width: 130px;
+	height: 60px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	margin-left: 105px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 800;
+}

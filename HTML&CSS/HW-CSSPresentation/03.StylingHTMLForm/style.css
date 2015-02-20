@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Tahoma, Arial, sans-serif;
+	background: url('formBackground.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}
+
+.container{
+	width: 450px;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.step-title{
+	color: #fff;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+.field{
+	padding: 15px;
+	margin-bottom: 2px; 
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+	border: 1px solid #fff;
+}
+
+input, textarea{
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.address-label{
+	float: left;
+}
+
+input{
+	width: 230px;
+	float: right;
+	margin-right: 70px;
+}
+
+input[type="radio"]{
+	width: auto;
+	float: none;
+	margin-right: 0;
+}
+
+.radio-set{
+	padding: 15px;
+}
+
+.radio-set>*{
+	margin-right: 25px;
+}
+
+textarea{
+	float: right;
+	margin-right: 70px;
+	width: 230px;
+	height: 120px;
+	resize: none;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.visa:before{
+	padding-right: 3px;
+	content: url('img/visa.jpg');
+}
+
+.amex:before{
+	padding-right: 3px;
+	content: url('img/amex.jpg');
+}
+
+.master-card:before{
+	padding-right: 3px;
+	content: url('img/master-card.jpg');
+}
+
+input:focus, textarea:focus{
+	background: #ccc;
+}

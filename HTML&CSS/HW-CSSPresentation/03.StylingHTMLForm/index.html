@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 3. Stiling a HTML Form.</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section class="container">
+		<form action="index.html" method="POST">
+			<ul>
+				<!-- First section -->
+				<div class="section-one">
+					<li class="step-title">Step 1. Your details</li>
+
+					<li class="field transparent-bg">
+						<label class="left-col" for="name">Name</label>
+						<input type="text" name="name" placeholder="First and last name" />
+					</li>
+
+					<li class="field transparent-bg">
+						<label for="email">Email</label>
+						<input type="text" name="email" placeholder="example@domain.com" />
+					</li>
+
+					<li class="field">
+						<label for="phone">Phone</label>
+						<input type="text" name="phone" placeholder="e.g. +447500000000" />
+					</li>
+				</div>
+
+				<!-- Second section -->
+				<div class="section-two">
+					<li class="step-title">Step 2. Delivery address</li>
+
+					<li class="field">
+						<label for="address" class="address-label">Address</label>
+						<textarea name="address" class="adress-text-field"></textarea>
+						<div class="clearfix"></div>
+					</li>
+
+					<li class="field">
+						<label for="email">Email</label>
+						<input type="text" placeholder="example@domain.com" />
+					</li>
+
+					<li class="field">
+						<label for="phone">Phone</label>
+						<input type="text" placeholder="e.g. +447500000000" />
+					</li>
+				</div>
+
+				<!-- Third section -->
+				<div class="section-three">
+					<li class="step-title">Step 3. Card details</li>
+
+					<li class="field">
+						<label for="card-type">Card type</label>
+						<div class="radio-set">
+							<input type="radio" name="Visa" value="visa" /> 
+							<span class="visa">Visa</span>
+							
+							<input type="radio" name="AmEx" value="amex" /> 
+							<span class="amex">AmEx</span>
+
+							<input type="radio" name="Mastercard" value="mastercard" /> 
+							<span class="master-card">Mastercard</span>
+						</div>
+					</li>
+
+					<li class="field">
+						<label for="card-number">Card number</label>
+						<input type="text" name="card_number" />
+					</li>
+
+					<li class="field">
+						<label for="security-code">Security code</label>
+						<input type="text" name="security_code" />
+					</li>
+
+					<li class="field">
+						<label for="name-on-card">Name on card</label>
+						<input type="text" name="name_on_card" placeholder="exact name as on the card" />
+					</li>
+				</div>
+			</ul>			
+		</form>
+	</section>
+
+</body>
+</html>
