@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 4. Fakebook Register Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="top-header">
+		<h1>fakebook</h1>
+		<h3>Registration</h3>
+		<h5>It is safe and it will always be!</h5>
+	</header>
+
+	<section>
+		<div class="left-panel">
+			<form action="" method="POST">
+				<fieldset>
+					<legend>Non-important information:</legend>
+
+					<input type="text" name="first_name" placeholder="First name">
+					<input type="text" name="last_name" placeholder="Last name"><br />
+
+					<input type="email" name="email" placeholder="Email">
+					<input type="text" name="phone" placeholder="Phone number"><br />
+
+					<input type="password" name="password" placeholder="Password">
+					<input type="password" name="website" placeholder="Website"><br />
+					
+					Birthday: <br />
+					<input type="date" name="birthday"><br />
+
+					<input type="radio" name="female"> Female
+					<input type="radio" name="male"> Male
+					<input type="radio" name="other"> Other
+				</fieldset>
+
+			</form>
+
+			<button>Clear Form</button>
+		</div>
+
+		<div class="right-panel">
+			<form action="" method="POST">
+				<fieldset>
+					<legend>Important information *required</legend>
+
+					<select>
+						<option value="Bulgaria">Bulgaria</option>
+						<option value="England">England</option>
+					</select>
+					<input type="text" name="village" placeholder="Viallage">
+					<input type="text" name="dist" placeholder="Disctinct"><br />
+
+					<input type="text" name="street" placeholder="Street">
+					<input type="text" name="nr" placeholder="Nr" class="small-input">
+					<input type="text" name="floor" placeholder="floor" class="small-input">
+					<input type="text" name="app_nr" placeholder="App Nr" class="small-input"><br />
+
+					Door color: <br />
+					<input type="color" name="door_color" placeholder="Door Color">
+					<input type="text" name="water" placeholder="Water Meter Nr">
+					<input type="text" name="panties_size" placeholder="Aunt's panties size"><br />
+
+					More personal information: <br />
+					<textarea name="more_info" placeholder="Give us more information!!!"></textarea>
+				</fieldset>
+			</form>
+
+			<button>Register</button>
+		</div>
+	</section>
+</div>
+
+</body>
+</html>

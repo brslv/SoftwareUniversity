@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Tahoma;
+}
+
+.title{
+	font-style: italic;
+}
+
+.row{
+	width: 400px;
+}
+
+.row-one-cols,
+.row-two-col-one,
+.row-three-col-one{
+	width: 200px;
+	float: left;
+}
+
+.row-two-col-two,
+.row-two-col-three,
+.row-three-col-two,
+.row-three-col-three{
+	width: 100px;
+	float: left;
+}
+
+.last-row{
+	float:left;
+	width: 200px;
+}
+
+.row-four-col-one,
+.row-four-col-two,
+.row-four-col-three{
+	float: left;
+	width: 33%;
+}
+
+input, select{
+	padding: 5px;
+}
+
+input, select{
+	width: 100%;
+}
+
+.clearfix{
+	clear: both;
+}
