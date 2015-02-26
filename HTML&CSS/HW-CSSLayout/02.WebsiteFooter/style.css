@@ -1,0 +1,110 @@
+@import normalize.css;
+
+*{
+	box-sizing: border-box;
+}
+
+/*______Base______*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #eee;
+	line-height: 1.7em;
+}
+
+a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	transition: color .2s;
+}
+
+h3{
+	margin-top: 0;
+}
+
+a:hover{
+	color: orange;
+}
+
+/*______Grid______*/
+footer{
+	padding: 40px 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #234465;
+	color: #fff;
+}
+
+.footer-container:after{
+	content: " ";
+	clear: both;
+	display: table;
+	zoom: 1;
+}
+
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.col{
+	width: 18%;
+	margin-right: 2%;
+	float: left;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.col img{
+	max-width: 100%;
+}
+
+.col:last-child{
+	margin-right: 0;
+}
+
+/*______Elements______*/
+.section-title{
+	color: orange;
+}
+
+a.btn{
+	display: inline-block;
+	width: 180px;
+	border: 2px solid orange;
+	margin-bottom: 5px;
+	padding: 10px;
+	text-align: center;
+	-webkit-transition: background .2s;
+	-moz-transition: background .2s;
+	transition: background .2s;
+}
+
+a.btn:hover{
+	color: #fff;
+	background: orange;
+}
+
+.fbox{
+	width: 230px;
+	background: #fff;
+}
+
+/*______Links______*/
+
+ul.block-nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
