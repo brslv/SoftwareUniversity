@@ -1,30 +1,27 @@
-var args = [
-	["HelloWorld", true],
-	["HelloWorld", false],
-];
+(function(){
+	
+    function sortLetters( inputStr, bool ) {
+        var letters = [];
 
-var str = args[0][0], 
-	bool = args[0][1];
-	
-function sortLetters(str, bool){
-	
-	var letters = [], resultStr = '';
-	
-	for(var i = 0; i < str.length; i++){
-		letters.push(str[i]);
-	}
-	
-	letters.sort(function(a, b){
-		if(bool){
-			return a.toLowerCase() > b.toLowerCase();
-		}
-		else{
-			return a.toLowerCase() < b.toLowerCase();
-		}
-	});
-	
-	resultStr = letters.join("");
-	return resultStr;
-}
+        for( var l = 0; l < inputStr.length; l++ ) {
+            letters.push( inputStr[l] );
+        }
 
-console.log(sortLetters(str, bool));
+        letters.sort( function(let1, let2) {
+            if( bool ) {
+                return let1.toLowerCase() > let2.toLowerCase();
+            } else {
+                return let1.toLowerCase() < let2.toLowerCase();
+            }
+        } )
+
+        return letters.join().replace( /,/g,'' );
+    }
+
+    /**
+     * Inputs.
+     */
+    console.log( sortLetters( 'HelloWorld', true ) );
+//	console.log( sortLetters( 'HelloWorld', false ) );
+	
+}());
