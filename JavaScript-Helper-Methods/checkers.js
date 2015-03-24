@@ -1,6 +1,10 @@
 (function() {
 
 	/**
+	 * Checker helpers
+	 */
+
+	/**
 	 * Check if an object is a number, even if in a quotes;
 	 * @param  {Object}  item
 	 * @return {Boolean}

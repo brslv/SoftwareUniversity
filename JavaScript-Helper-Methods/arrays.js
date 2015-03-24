@@ -1,9 +1,24 @@
 (function() {
 
 	/**
-	 * Helper functions and methods
-	 * Arrays
+	 * Arrays helpers
 	 */
+	
+	/**
+	 * Returns the maximum value of an array.
+	 * @return {int} [Max value]
+	 */
+	Array.prototype.max = function() {
+		return this.sort(function(a, b){ return a < b; })[0];
+	};
+
+	/**
+	 * Returns the minimum value of an array.
+	 * @return {[int]} [Min value]
+	 */
+	Array.prototype.min = function() {
+		return this.sort(function(a, b){ return a > b; })[0];
+	};
 
 	/**
 	 * Deletes from array all the elements, matching the element given as param.
