@@ -98,6 +98,32 @@
 	};
 
 	/**
+	 * Performs a binary search and returns the position of the argument-element.
+	 * Works on integer values.
+	 * Use: arr.elemPos(5);
+	 * @param  {int} elem 
+	 * @return {int} [The element's position]
+	 */
+	Array.prototype.elemPos = function(elem) {
+		var start = 0,
+			end = this.length - 1;
+
+		while (start <= end) {
+			var mid = start + end / 2;
+			if (this[mid] === elem) {
+				return mid;
+			} else if (elem < this[mid]) {
+				end = mid - 1;
+			} else {
+				end = mid + 1;
+			}
+		}
+
+		return -1;
+
+	};
+
+	/**
 	 * Drops the first n elements (given as an argument to the method).
 	 * Use: arr.drop(n);
 	 * @param  {Number} dropCount
@@ -112,8 +138,6 @@
 
 		return result;
 	};
-
-	a = [1, 2, 3, 4];
 
 	/**
 	 * Drops the last n elements (given as an argument to the method).
@@ -147,6 +171,31 @@
 					result.push(x);
 			} else {
 				if (Object.prototype.toString.call(x) !== '[object String]')
+					result.push(x);
+			}
+		});
+
+		return result;
+	};
+
+	/**
+	 * Removes all the number values from an array.
+	 * Provide `true` if you want to skip string numbers (e.g. "12", "5"...).
+	 * Provide `false` if you want to remove all the numbers, even string numbers.
+	 * Use: arr.deNum(true/false)
+	 * @param  {[type]} skipString [description]
+	 * @return {[type]}            [description]
+	 */
+	Array.prototype.deNum = function(skipString) {
+		var result = [];
+		skipString = Object.prototype.toString.call(skipString) === '[object Boolean]' ? skipString : false;
+
+		this.forEach(function(x) {
+			if (skipString) {
+				if (Object.prototype.toString.call(x) === '[object String]')
+					result.push(x);
+			} else {
+				if (isNaN(x))
 					result.push(x);
 			}
 		});
