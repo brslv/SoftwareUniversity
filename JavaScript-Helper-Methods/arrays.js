@@ -1,4 +1,4 @@
-(function(){
+(function() {
 
 	/**
 	 * Helper functions and methods
@@ -8,28 +8,28 @@
 	/**
 	 * Deletes from array all the elements, matching the element given as param.
 	 * Use: array.deleteFirst(item);
-	 * @param  {[Number/string/boolean]} delItem 
+	 * @param  {[Number/string/boolean]} delItem
 	 * @return {[]}
 	 */
 	Array.prototype.deleteAll = function(delItem) {
-	    for( var i = 0; i < this.length; i++ ){
-	        if( this[i] === delItem ) {
-	            this.splice(i, 1);
-	            i--;
-	        }
+		for (var i = 0; i < this.length; i++) {
+			if (this[i] === delItem) {
+				this.splice(i, 1);
+				i--;
+			}
 		}
 
-	    return this;
+		return this;
 	};
 
 	/**
-	 * Deletes from an array the first element, matching the element given as param. 
+	 * Deletes from an array the first element, matching the element given as param.
 	 * Use: array.deleteFirst(item)
 	 * @return {[]}
 	 */
 	Array.prototype.deleteFirst = function(delEl) {
-		for( var i = 0; i < this.length; i++ ) {
-			if( this[i] === delEl ) {
+		for (var i = 0; i < this.length; i++) {
+			if (this[i] === delEl) {
 				this.splice(i, 1);
 				break;
 			}
@@ -40,9 +40,9 @@
 
 	/**
 	 * Swaps the positions of two elements in array.
-	 * @param  {Number/string} first 
-	 * @param  {Number/string} sec   
-	 * @return {[]}       
+	 * @param  {Number/string} first
+	 * @param  {Number/string} sec
+	 * @return {[]}
 	 */
 	Array.prototype.swap = function(first, sec) {
 		var temp = this[first];
@@ -56,22 +56,22 @@
 	 * containing the occurance of each element in the array,
 	 * as well as a property `most`, containing the most frequent element.
 	 * Use: arr.frequency() // { element1: freq, element2: freq, most: element1 }
-	 * 		arr.frequency().most => the most frequent element 
-	 * @return {[]} 
+	 * 		arr.frequency().most => the most frequent element
+	 * @return {[]}
 	 */
 	Array.prototype.frequency = function() {
 		var freq = {};
-		this.forEach(function(el){
-			if(freq.hasOwnProperty(el)){
+		this.forEach(function(el) {
+			if (freq.hasOwnProperty(el)) {
 				freq[el] += 1;
-			}else{
+			} else {
 				freq[el] = 1;
 			}
 		});
 
 		var maxCount = Number.MIN_VALUE;
-		for(var el in freq){
-			if(freq[el] > maxCount){
+		for (var el in freq) {
+			if (freq[el] > maxCount) {
 				maxCount = freq[el];
 				freq.most = el;
 			}
@@ -83,13 +83,13 @@
 	/**
 	 * Returns how many time a specific element occurs in an array.
 	 * Use: arr.occurance(someElement);
-	 * @param  {Number/string} elem 
-	 * @return {Number}      
+	 * @param  {Number/string} elem
+	 * @return {Number}
 	 */
 	Array.prototype.occurance = function(elem) {
 		var occ = 0;
-		this.forEach(function(x){
-			if(x === elem){
+		this.forEach(function(x) {
+			if (x === elem) {
 				occ++;
 			}
 		});
@@ -101,30 +101,30 @@
 	 * Drops the first n elements (given as an argument to the method).
 	 * Use: arr.drop(n);
 	 * @param  {Number} dropCount
-	 * @return {[]}          
+	 * @return {[]}
 	 */
 	Array.prototype.drop = function(dropCount) {
 		var result = [];
 
-		for(var i = dropCount; i < this.length; i++) {
+		for (var i = dropCount; i < this.length; i++) {
 			result.push(this[i]);
 		}
 
 		return result;
 	};
 
-	a = [1,2,3,4];
+	a = [1, 2, 3, 4];
 
 	/**
 	 * Drops the last n elements (given as an argument to the method).
 	 * Use: arr.dropEnd(n);
 	 * @param  {Number} dropCount
-	 * @return {[]}          
+	 * @return {[]}
 	 */
 	Array.prototype.dropEnd = function(dropCount) {
 		var result = [];
 
-		for(var i = 0; i < this.length - dropCount; i++) {
+		for (var i = 0; i < this.length - dropCount; i++) {
 			result.push(this[i]);
 		}
 
@@ -136,17 +136,17 @@
 	 * Provide `true` if you want to skip string numbers (e.g. "12", "5"...).
 	 * Provide `false` if you want to remove all the strings, even string numbers.
 	 * @param  {Boolean} skipNums
-	 * @return {[]}         
+	 * @return {[]}
 	 */
 	Array.prototype.deString = function(skipNums) {
-		var result = []; 
+		var result = [];
 
-		this.forEach(function(x){
-			if(skipNums){
-				if(!isNaN(x))
+		this.forEach(function(x) {
+			if (skipNums) {
+				if (!isNaN(x))
 					result.push(x);
 			} else {
-				if(Object.prototype.toString.call(x) !== '[object String]')
+				if (Object.prototype.toString.call(x) !== '[object String]')
 					result.push(x);
 			}
 		});
@@ -156,12 +156,12 @@
 
 	/**
 	 * Merges two arrays.
-	 * You can provide a boolean value to specify if you want the method to check 
-	 * elements for uniqueness. 
+	 * You can provide a boolean value to specify if you want the method to check
+	 * elements for uniqueness.
 	 * Use: arr.merge([1,2,5,6,10], false/true);
 	 * @param  {[]} anotherArray
 	 * @param  {Boolean} uniqueValues
-	 * @return {[]}             
+	 * @return {[]}
 	 */
 	Array.prototype.merge = function(anotherArray, uniqueValues) {
 		var result = [];
@@ -171,17 +171,17 @@
 
 		result = this.splice(0);
 
-		anotherArray.forEach(function(y){
-			if(uniqueValues){
+		anotherArray.forEach(function(y) {
+			if (uniqueValues) {
 				var isUnique = true;
 
-				result.forEach(function(z){
-					if(z === y) {
+				result.forEach(function(z) {
+					if (z === y) {
 						isUnique = false;
 					}
 				});
 
-				if(isUnique)
+				if (isUnique)
 					result.push(y);
 			} else {
 				result.push(y);
@@ -203,8 +203,8 @@
 	var packObj = function(keys, values) {
 		var result = {};
 
-		if(keys.length === values.length){
-			for(var i = 0; i < keys.length; i++) {
+		if (keys.length === values.length) {
+			for (var i = 0; i < keys.length; i++) {
 				result[keys[i]] = values[i];
 			}
 
@@ -212,6 +212,40 @@
 		}
 
 		return false;
+	};
+
+	/**
+	 * Returns the longest sequence of equal values in an array.
+	 * @return {[]} [The longest chain]
+	 */
+	Array.prototype.longestSeq = function() {
+		var longest = [],
+			maxLen = 1,
+			currentLen = 1,
+			startIndex = 0,
+			endIndex = 1;
+
+
+		for (var i = 0; i < this.length - 1; i++) {
+			if (this[i] === this[i + 1]) {
+				currentLen++;
+
+				if (currentLen > maxLen) {
+					maxLen = currentLen;
+					startIndex = (i + 1) - (currentLen + 1); // last element from the seq - the sequence length - 1
+					endIndex = i + 1;
+				}
+
+			} else {
+				currentLen = 1;
+			}
+		}
+
+		for (i = startIndex; i <= endIndex; i++) {
+			longest.push(this[i]);
+		}
+
+		return longest;
 	};
 
 }());
