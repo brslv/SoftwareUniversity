@@ -3,13 +3,15 @@
 	/**
 	 * Arrays helpers
 	 */
-	
+
 	/**
 	 * Returns the maximum value of an array.
 	 * @return {int} [Max value]
 	 */
 	Array.prototype.max = function() {
-		return this.sort(function(a, b){ return a < b; })[0];
+		return this.sort(function(a, b) {
+			return a < b;
+		})[0];
 	};
 
 	/**
@@ -17,7 +19,9 @@
 	 * @return {[int]} [Min value]
 	 */
 	Array.prototype.min = function() {
-		return this.sort(function(a, b){ return a > b; })[0];
+		return this.sort(function(a, b) {
+			return a > b;
+		})[0];
 	};
 
 	/**
@@ -116,7 +120,7 @@
 	 * Performs a binary search and returns the position of the argument-element.
 	 * Works on integer values.
 	 * Use: arr.elemPos(5);
-	 * @param  {int} elem 
+	 * @param  {int} elem
 	 * @return {int} [The element's position]
 	 */
 	Array.prototype.elemPos = function(elem) {
@@ -310,6 +314,30 @@
 		}
 
 		return longest;
+	};
+
+	/**
+	 * Pulls odd or even memebers of the array.
+	 * @param  {string} pullType `odds` or `evens`.
+	 * @return {[type]}         
+	 */
+	Array.prototype.pull = function(pullType) {
+		var count = 1,
+			result = [],
+			pullType = (pullType === 'odds' || pullType === 'evens') ? pullType : 'odds';
+
+		this.forEach(function(x) {
+			if (count % 2 !== 0 && pullType === 'odds') {
+				result.push(x);
+			}
+
+			if (count % 2 === 0 && pullType === 'evens') {
+				result.push(x);
+			}
+			count++;
+		});
+
+		return result;
 	};
 
 }());
