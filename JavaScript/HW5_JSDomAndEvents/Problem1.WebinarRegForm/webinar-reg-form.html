@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Problem 1. Webinar Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section>
+		<form>
+			<ul>
+				<label for="name">Име и фамилия<span class="star">*</span></label>
+				<li id="name"><input type="text" name="name" /></li>
+
+				<label for="adress">Адрес</label>
+				<li id="adress"><input type="text" name="name" /></li>
+
+				<label for="occup">Населено място</label>
+				<li id="occup"><input type="text" name="name" /></li>
+
+				<label for="code">Пощенски код</label>
+				<li id="code"><input type="text" name="name" /></li>
+
+				<label for="email">Email<span class="star">*</span></label>
+				<li id="email"><input type="email" name="name" /></li>
+
+				<label for="tel">Телефон<span class="star">*</span></label>
+				<li id="tel"><input type="telephone" name="name" /></li>
+
+				<label for="date">Дата на семинара<span class="star">*</span></label>
+				<li id="date"><input type="text" name="name" /></li>
+
+				<li><input type="checkbox" name="invoice" id="invoice-check" />Желая фактура</li>
+
+				<div class="more" style="display: none;">
+					<label for="firm">Фирма/Организация<span class="star">*</span></label>
+					<input type="text" name="firm" />
+
+					<label for="mol">МОЛ<span class="star">*</span></label>
+					<input type="text" name="mol" />
+
+					<label for="eik">ЕИК<span class="star">*</span></label>
+					<input type="text" name="eik" />
+
+					<label for="dds">ИН по ДДС<span class="star">*</span></label>
+					<input type="text" name="dds" />
+
+					<label for="firm-adress">Адрес<span class="star">*</span></label>
+					<input type="text" name="firm-adress" />
+				</div>
+
+				<input type="submit" name="reg" value="Регистрирай се" />
+				<input type="submit" name="submit" value="Изчисти" />
+			</ul>
+		</form>
+	</section>
+
+	<script src="scripts/webinar-reg-form.js"></script>
+</body>
+</html>

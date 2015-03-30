@@ -1,0 +1,11 @@
+section {
+    width: 650px;
+    margin: 50px auto;
+    padding: 50px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
