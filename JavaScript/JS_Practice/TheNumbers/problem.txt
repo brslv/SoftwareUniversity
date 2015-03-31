@@ -5,8 +5,10 @@ Your job is to clear the text from any unnecessary symbols (only the numbers are
 
 For example, we have the following message: "5tffwj(//*7837xzc2---34rlxXP%$". After trimming the unnecessary data (non-numeric characters), we've got the numbers 5, 7837, 2 and 34 left. We convert them to hex: 5, 1E9D, 2, 22; add leading zeros where needed: 0005, 1E9D, 0002, 0022, place 0x before each one and conc	atenate them with dashes: 0x0005-0x1E9D-0x0002-0x0022. 
 (Note: hex values MUST be uppercase)
+
 Input
 The input data will be received as an array. It contains one argument – the initial message you need to transform.
 The input data will always be valid and in the format described. There is no need to check it explicitly.
+
 Output
 The output consists of only one line – the transformed message. 
