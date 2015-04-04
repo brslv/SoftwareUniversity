@@ -65,7 +65,7 @@
          */
         Array.prototype.deleteEl = function(el) {
             for(var x in this) {
-                if(this[x] === el) this.splice(x, 2);
+                if(this[x] === el) this.splice(x, 1);
             }
 
             return this;
