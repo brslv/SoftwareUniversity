@@ -81,4 +81,15 @@
             
             return resultObj;
         };
+        
+        /**
+         * Creates a deep copy of a given object
+         * Use: deepCopyObject(obj);
+         * @param {Object} obj
+         * @returns {Object} Copy of the object
+         */
+        function deepCopyObject(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
+        
 }());
