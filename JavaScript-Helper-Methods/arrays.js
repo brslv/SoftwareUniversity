@@ -56,6 +56,34 @@
 
 		return this;
 	};
+        
+        /**
+         * Deletes a given element from array.
+         * Use: arr.deleteEl('something');
+         * @param {string} el
+         * @returns {[]}
+         */
+        Array.prototype.deleteEl = function(el) {
+            for(var x in this) {
+                if(this[x] === el) this.splice(x, 2);
+            }
+
+            return this;
+        };
+        
+        /**
+         * Deletes a given element from array, based on it's index.
+         * Use: arr.deleteElByIndex(2);
+         * @param {Number} index
+         * @returns {[]}
+         */
+        Array.prototype.deleteElByIndex = function(index) {
+            for(var i = 0; i < this.length; i++) {
+                if(i === index ) this.splice(i, 1);
+            }
+
+            return this;
+        };
 
 	/**
 	 * Swaps the positions of two elements in array.
