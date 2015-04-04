@@ -79,6 +79,6 @@
                 }
             });
             
-            console.log(resultObj);
+            return resultObj;
         };
 }());
