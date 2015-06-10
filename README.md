@@ -7,3 +7,9 @@ Level 1
 - HTML/CSS Course - The second course of the first part of my education @ SoftUni. We studied some basic HTML/CSS structures and concepts such as semantic HTML5, tables, forms, layouts, CSS positioning, presentation, SASS & Less, Emmet and much more.
 
 - JavaScript Course - In this course we were presented to the basics of the JavaScript syntax, flow control and data-structures. To be hones, I'm in love with the dynamic nature of the language, as well as the functional capabilities it offers. Maybe my favourite course by far.
+
+- PHP - Basics of the PHP language. 
+
+Mid-level
+---------
+- OOP - Basic principles of Object Oriented Programming. We use the C# language.
