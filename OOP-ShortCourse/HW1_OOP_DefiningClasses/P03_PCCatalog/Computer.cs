@@ -85,19 +85,10 @@ class Computer : IComparable<Computer>
     /// <returns></returns>
     public int CompareTo(Computer other)
     {
-        #region first approach sorting
-
-        //return this.Price.CompareTo(other.Price);
-
-        #endregion
-
-        #region second approach on sorting
 
         if (this.Price > other.Price) return 1;
         if (this.Price < other.Price) return -1;
         if (this.Price == other.Price) return 0;
-
-        #endregion
 
         return 0;
     }

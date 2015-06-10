@@ -1,0 +1,6 @@
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\bin\Debug\P04_LearningSystem.exe.config
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\obj\Debug\P04_LearningSystem.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\bin\Debug\P04_LearningSystem.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\bin\Debug\P04_LearningSystem.pdb
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\obj\Debug\P04_LearningSystem.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P04_LearningSystem\obj\Debug\P04_LearningSystem.pdb
