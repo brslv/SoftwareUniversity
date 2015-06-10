@@ -1,0 +1,6 @@
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\bin\Debug\P01_Persons.exe.config
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\bin\Debug\P01_Persons.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\bin\Debug\P01_Persons.pdb
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\obj\Debug\P01_Persons.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\obj\Debug\P01_Persons.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P01_Persons\obj\Debug\P01_Persons.pdb

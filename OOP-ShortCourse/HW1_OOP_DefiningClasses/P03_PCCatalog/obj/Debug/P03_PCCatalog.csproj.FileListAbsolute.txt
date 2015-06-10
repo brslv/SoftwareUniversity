@@ -1,0 +1,6 @@
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\bin\Debug\P03_PCCatalog.exe.config
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\bin\Debug\P03_PCCatalog.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\bin\Debug\P03_PCCatalog.pdb
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\obj\Debug\P03_PCCatalog.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\obj\Debug\P03_PCCatalog.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P03_PCCatalog\obj\Debug\P03_PCCatalog.pdb

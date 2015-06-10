@@ -1,0 +1,6 @@
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\bin\Debug\P02_LaptopShop.exe.config
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\bin\Debug\P02_LaptopShop.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\bin\Debug\P02_LaptopShop.pdb
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\obj\Debug\P02_LaptopShop.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\obj\Debug\P02_LaptopShop.exe
+C:\Users\ACER\Desktop\Development\CSharp\Homeworks\Homeworks_rewrite\HW1_OOP_DefiningClasses\P02_LaptopShop\obj\Debug\P02_LaptopShop.pdb
