@@ -1,0 +1,26 @@
+RDBMS main functions
+====================
+
+1. Data storage management -  This particular function is used for the storage of data and any related data entry forms or screen definitions, report definitions, data validation rules, procedural code, and structures that can handle video and picture formats. Users do not need to know how data is stored or manipulated. Also involved with this structure is a term called performance tuning that relates to a database’s efficiency in relation to storage and access speed.
+
+2. Secutiry management -  This is one of the most important functions in the RDBMS. Security management sets rules that determine specific users that are allowed to access the database.This function also sets restraints on what specific data any user can see or manage. 
+
+3. Multiuser access control - Data integrity and data consistency are the basis of this function. Multiuser access control is a very useful tool in a RDBMS, it enables multiple users to access the database simultaneously without affecting the integrity of the database. 
+
+4. Backup and recovery managemet - Backup and recovery is brought to mind whenever there is potential outside threats to a database. For example if there is a power outage, recovery management is how long it takes to recover the database after the outage. Backup management refers to the data safety and integrity.
+
+5. Data integrity management - The RDBMS enforces these rules to reduce things such as data redundancy, which is when data is stored in more than one place unnecessarily, and maximizing data consistency, making sure database is returning correct/same answer each time for same question asked.
+
+6. Database access languages and API's - SQL is the most common query language supported by the majority of DBMS vendors. The use of this language makes it easy for user to specify what they want done without the headache of explaining how to specifically do it. 
+
+7. Database communication interfaces (DCI) - This refers to how a DBMS can accept different end user requests through different network environments. An example of this can be easily related to the internet.  A DBMS can provide access to the database using the Internet through Web Browsers (Mozilla Firefox, Internet Explorer, Netscape). 
+
+8. Transaction management - This refers to how a DBMS must supply a method that will guarantee that all the updates in a given transaction are made or not made.All transactions must follow what is called the ACID properties.
+
+	=> A – Atomicity: states a transaction is an indivisible unit that is either performed as a whole and not by its parts, or not performed at all.It is the responsibility of recovery management to make sure this takes place.
+
+	=> C – Consistency:A transaction must alter the database from one constant state to another constant state. 
+
+	=> I – Isolation:Transactions must be executed independently of one another.Part of a transaction in progress should not be able to be seen by another transaction. 
+
+	=> D – Durability:A successfully completed transaction is recorded permanently in the database and must not be lost due to failures.

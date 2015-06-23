@@ -1,0 +1,22 @@
+Database normalization
+======================
+
+Database normalization is the process of organizing the attributes and tables of a relational database to minimize data redundancy.
+
+Normalization involves decomposing a table into less redundant (and smaller) tables but without losing information; defining foreign keys in the old table referencing the primary keys of the new ones. The objective is to isolate data so that additions, deletions, and modifications of an attribute can be made in just one table and then propagated through the rest of the database using the defined foreign keys.
+
+Mike Hillyer, a technical writer in MySQL AB (now Oracle Corporation), explains normalization this way: “The goal of database normalization is to ensure that every non-key column in every table is directly dependent on the key: the whole key and nothing but the key. And with this goal, come the benefits in the form of reduced redundancies, fewer anomalies, and improved efficiencies.”
+
+The process of normalization includes roughly four steps:
+1. 1NF (First normal form)
+	Ensureing that the values in each column of a table are atomic; which means they are unique, containing no sets of values.
+
+2. Defining relationships (one-to-one, ont-to-many, many-to-
+
+3. 2NF (Second normal form)
+	Second normal form (2NF) cuts down the tautological/superfluous data in a table by selecting it, putting it in new tables and by establishing relations amongst them. In database normalization, 2NF is about the relations between the composite key columns and non-key columns. That means the non-key columns have to depend on the whole composite key.
+
+Here, the primary key is composite to eliminate the possibility of the same person writing more than one review of the book. Reviewer URL is dependent only on the Reviewer ID which is only part of the whole composite key.
+
+4. 3NF (Third normal form)
+	This requires that all columns depend directly on the primary key. Tables violate the 3NF when one column depends on another column which in turn depends on the primary key. (A transitive dependency)

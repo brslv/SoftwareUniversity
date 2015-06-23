@@ -1,0 +1,22 @@
+Advantages of database normalization
+====================================
+
+1. The database does not have redundant data, it is smaller in size so less money need to be spend on storage.
+
+2. Because there is less data to search through, it is much faster to run a query on the data.
+
+3. Because there is no data duplication there is better data integrity and less risk of mistakes.
+
+4. Once change can be made which can instantly be cascaded across any related records.
+
+5. Searching, sorting, and creating indexes is faster, since tables are narrower, and more rows fit on a data page.
+
+6. Index searching is often faster, since indexes tend to be narrower and shorter.
+
+7. More tables allow better use of segments to control physical placement of data.
+
+8. Triggers execute more quickly if you are not maintaining redundant data.
+
+9. Data modification anomalies are reduced.
+
+10. Normalization is conceptually cleaner and easier to maintain and change as your needs change.

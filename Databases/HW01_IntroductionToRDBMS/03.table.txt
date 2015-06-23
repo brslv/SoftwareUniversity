@@ -1,0 +1,10 @@
+Table in Database terms:
+========================
+
+I've found an interesting metaphor about schema, database and table.
+
+	=> schema -> database -> table == floor plan -> house -> room
+
+The table plays the role of a single room in the big house (the database). In a more technical terms, the table is a structure with a bunch of rows, each of which has the attributes (columns), defined by the schema. Each row in the table has exactly the same attributes (columns) as the other rows in the same table.
+
+Tables may also have indexes on them to aid in looking up values on certain columns.
