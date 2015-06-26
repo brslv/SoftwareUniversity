@@ -1,0 +1,8 @@
+What is T-SQL
+=============
+
+T-SQL (Transact-SQL) is a set of programming extensions from Sybase and Microsoft that add several features to the Structured Query Language (SQL) including transaction control, exception and error handling, row processing, and declared variables.
+
+In T-SQL you can also write stored procedures: pieces of code residing on the server to manage complex business rules that are hard or impossible to manage with pure set-based operations.
+
+It's mostly used in MS SQL Server.

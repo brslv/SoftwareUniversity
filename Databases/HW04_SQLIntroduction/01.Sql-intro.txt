@@ -1,0 +1,32 @@
+What is SQL
+===========
+
+SQL is the alias for Structured Query Language - a computer language for storing, manipulating and retrieving data in/from relational database systems (RDBMS's).
+
+Different database systems may use a slightly different SQL than the normal SQL (SQL dialect). There are these most common SQL dialects:
+	- MS SQL uses T-SQL
+	- Oracle uses PL/SQL
+	- MS Access uses JET SQL
+
+SQL's role in the database world:
+	- Allows users to acces data in RDBMS
+	- Allows users to describe the data
+	- Allows them to manipulate that data
+	- Plays the role of a bridge between the application and the database server
+	- Allows the users to manipulate tables, to create and drop them.
+	- Allows the users to set permissions
+
+What is DML
+===========
+DML (or Data Manipulation Language) statements are used to work with the data in tables. There are four base commands (CRUD):
+	- SELECT
+	- INSERT
+	- UPDATE
+	- DELETE
+
+What is DDL
+===========
+DDL (or Data Definition Language) statements are used to build and modify the structure of your tables and other objects in the database.
+	- CREATE
+	- ALTER
+	- DROP
